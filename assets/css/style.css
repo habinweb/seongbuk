@@ -13,12 +13,6 @@
   src: url("../../fonts/KoPubWorld-Batang-Medium.woff2") format("woff2"), url("../../fonts/KoPubWorld-Batang-Medium.woff") format("woff");
 }
 @font-face {
-  font-family: "KoPubWorldBatang";
-  font-weight: 700;
-  font-style: normal;
-  src: url("../../fonts/KoPubWorld-Batang-Bold.woff2") format("woff2"), url("../../fonts/KoPubWorld-Batang-Bold.woff") format("woff");
-}
-@font-face {
   font-family: "KoPubWorldDotum";
   font-weight: 300;
   font-style: normal;
@@ -3233,7 +3227,7 @@ footer {
   font-weight: 700;
   margin-bottom: 5px;
   margin-right: var(--gap);
-  font-family: var(--font2);
+  font-family: var(--font1);
 }
 @media (hover: hover) {
   .sub-page.space-place .page--place .sub-tab-btn:hover {
