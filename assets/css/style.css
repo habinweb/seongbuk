@@ -255,7 +255,7 @@ button {
   white-space: nowrap;
   transition: all 0.5s ease;
   position: relative;
-  opacity: 0.8;
+  opacity: 1;
   margin-right: 10px;
 }
 
@@ -649,7 +649,7 @@ footer {
 
 .foot-logo > a > img {
   width: 100%;
-  opacity: 0.8;
+  opacity: 1;
 }
 @media (max-width: 1024px) {
   .foot-logo > a > img {
@@ -733,7 +733,7 @@ footer {
     top: 55%;
     transform: translateY(-50%);
     left: 15px;
-    opacity: 0.8;
+    opacity: 1;
   }
 }
 
@@ -2003,7 +2003,7 @@ footer {
 }
 .main-page .commu-name,
 .main-page .commu01-date {
-  color: var(--color-4-80);
+  color: var(--color-4);
 }
 @media (max-width: 768px) {
   .main-page .commu-name,
