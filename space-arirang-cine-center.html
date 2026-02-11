@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>성북문화재단</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css"
+    />
+  </head>
+
+  <body class="sub-page space-place">
+    <div data-include="header"></div>
+
+    <main class="page page--place">
+      <div class="page-sticky">
+        <!-- Page Hero (공용) -->
+        <header class="page-hero">
+          <h1 class="page-hero-title">아리랑시네센터</h1>
+        </header>
+
+        <section class="page-section tab-group">
+          <!-- ✅ place 전용: 탭 + breadcrumb 한 줄 -->
+          <div class="place-head">
+            <div class="tab-box">
+              <!-- 상위 탭 -->
+              <div class="tab" role="tablist" aria-label="게시물 탭">
+                <button
+                  type="button"
+                  data-tab="introduce"
+                  class="tab-btn active"
+                >
+                  소개
+                </button>
+                <button type="button" data-tab="commu" class="tab-btn">
+                  커뮤니티
+                </button>
+              </div>
+            </div>
+
+            <!-- Breadcrumb -->
+            <nav
+              class="breadcrumb breadcrumb--space"
+              aria-label="현재 페이지 위치"
+            >
+              <div class="breadcrumb-links">
+                <a class="breadcrumb-link" href="index.html">홈</a>
+                <a class="breadcrumb-link" href="#">공간안내</a>
+                <a class="breadcrumb-link" href="#">아리랑시네센터</a>
+                <a class="breadcrumb-link" href="#">소개</a>
+              </div>
+            </nav>
+          </div>
+
+          <!-- ✅ 상위탭 패널: 소개 -->
+          <div
+            class="content-panel active content-panel--space"
+            data-panel="introduce"
+            aria-label="소개탭 하위 페이지"
+          >
+            <div class="tab-group">
+              <div
+                class="sub-tab-list"
+                role="tablist"
+                aria-label="소개 하위 탭"
+              >
+                <button
+                  type="button"
+                  data-tab="intro-01"
+                  class="sub-tab-btn active"
+                  id="intro-01"
+                >
+                  아리랑시네센터 소개
+                </button>
+                <button
+                  type="button"
+                  data-tab="intro-03"
+                  class="sub-tab-btn"
+                  id="intro-03"
+                >
+                  찾아오시는 길
+                </button>
+              </div>
+
+              <section class="sub-panels" aria-labelledby="intro-panels-title">
+                <h2 class="blind" id="intro-panels-title">소개 하위 컨텐츠</h2>
+
+                <!-- intro-01 -->
+                <div class="sub-panel active" data-panel="intro-01">
+                  <article class="sub-panel-article">
+                    <!-- imgPanel + modal + shareBtn -->
+                    <div class="media-panel-box">
+                      <div class="media-panel">
+                        <img
+                          class="zoom-image-main"
+                          src="assets/img/more4.jpg"
+                          alt="아리랑시네센터 이미지"
+                        />
+
+                        <!-- Image Modal Component -->
+                        <div
+                          class="image-modal"
+                          id="imgModal"
+                          aria-hidden="true"
+                        >
+                          <button
+                            class="image-modal-close"
+                            type="button"
+                            aria-label="닫기"
+                          >
+                            &times;
+                          </button>
+                          <div class="image-modal-scroll">
+                            <img
+                              id="imgModalContent"
+                              class="image-modal-image"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Share Panel Component -->
+                      <div class="share-panel">
+                        <div class="share-bar">
+                          <div class="share-bar-button">
+                            <img
+                              class="share-bar-icon"
+                              src="assets/img/share.png"
+                              alt="공유하기 버튼"
+                            />
+                          </div>
+                          <ul class="share-bar-list">
+                            <li class="share-bar-item">
+                              <img
+                                class="share-bar-icon"
+                                src="assets/img/blog-share.png"
+                                alt="블로그 공유하기"
+                              />
+                            </li>
+                            <li class="share-bar-item">
+                              <i
+                                class="fi fi-brands-instagram"
+                                aria-label="인스타그램으로 공유하기"
+                              ></i>
+                            </li>
+                            <li class="share-bar-item">
+                              <i
+                                class="fi fi-brands-facebook"
+                                aria-label="페이스북으로 공유하기"
+                              ></i>
+                            </li>
+                            <li class="share-bar-item">
+                              <i
+                                class="fi fi-brands-twitter"
+                                aria-label="트위터로 공유하기"
+                              ></i>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- content 01 -->
+                    <section
+                      class="post-content post-body"
+                      aria-labelledby="place-title"
+                    >
+                      <h2 class="post-title" id="place-title">
+                        아리랑시네센터
+                      </h2>
+                      <p class="sec-title">
+                        <span class="txt-bg-point"
+                          >"나누고 누리는 가족극장"</span
+                        >
+                      </p>
+                      <p class="txt justify">
+                        <strong class="strong">아리랑시네센터</strong>는 2004년
+                        개관하여 개봉영화 상영을 위한 3개 상영관을 운영하고
+                        있습니다. 1관 및 2관은 개봉(상업)영화를 상영하고 있고
+                        아리랑인디웨이브는 한국영화산업의 기반이 되는 다양성을
+                        위한 저자본 · 독립영화의 상영 기회를 보장하기위하여
+                        독립영화전용관으로 지정, 운영되고 있습니다. 2014년
+                        리노베이션을 통해 공연무대 설치, 고객편의 증대, 공유서가
+                        설치 및 공유 공간 확보함으로써 성북구민의
+                        복합문화시설로서 거듭나게 되었습니다. 앞으로도 영화를
+                        사랑하는 영화팬들과 지역주민들의 사랑받는
+                        아리랑시네센터가 되도록 노력하겠습니다.
+                      </p>
+
+                      <table class="info-table">
+                        <tbody class="info-table-body">
+                          <tr class="info-row info-row--contact">
+                            <th scope="row" class="info-label">문의</th>
+                            <td class="info-value">
+                              <a href="tel:02-3291-5540">02-3291-5540</a>
+                            </td>
+                          </tr>
+
+                          <tr class="info-row info-row--location">
+                            <th scope="row" class="info-label">장소</th>
+                            <td class="info-value">
+                              서울시 성북구 아리랑로 82
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </section>
+                  </article>
+                </div>
+
+                <!-- intro-03 -->
+                <div class="sub-panel" data-panel="intro-03">
+                  <section class="map-sec" aria-label="찾아오시는 길 지도">
+                    <div id="map" style="width: 100%; height: 400px"></div>
+
+                    <script
+                      type="text/javascript"
+                      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8eee94d82493b64d9445e2539b3f2fe9&autoload=false"
+                    ></script>
+
+                    <script>
+                      let map;
+
+                      kakao.maps.load(() => {
+                        map = new kakao.maps.Map(
+                          document.getElementById("map"),
+                          {
+                            center: new kakao.maps.LatLng(
+                              37.593873,
+                              127.016489,
+                            ),
+                            level: 3,
+                          },
+                        );
+                      });
+
+                      document.addEventListener("click", (e) => {
+                        if (
+                          !e.target.closest('.sub-tab-btn[data-tab="intro-03"]')
+                        )
+                          return;
+                        setTimeout(() => map && map.relayout(), 50);
+                      });
+                    </script>
+                  </section>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <!-- ✅ 상위탭 패널: 커뮤니티 -->
+          <div
+            class="content-panel"
+            data-panel="commu"
+            aria-label="커뮤니티 컨텐츠 하위 페이지"
+          >
+            커뮤니티 컨텐츠
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div data-include="fix-menu"></div>
+    <div data-include="footer"></div>
+
+    <script src="assets/js/include.js" defer></script>
+    <script src="assets/js/components.js" defer></script>
+    <script src="assets/js/tab.js" defer></script>
+  </body>
+</html>

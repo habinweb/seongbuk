@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>성북문화재단</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css"
+    />
+  </head>
+
+  <body class="sub-page space-place">
+    <div data-include="header"></div>
+
+    <main class="page page--place">
+      <div class="page-sticky">
+        <!-- Page Hero (공용) -->
+        <header class="page-hero">
+          <h1 class="page-hero-title">성북구민회관</h1>
+        </header>
+
+        <section class="page-section tab-group">
+          <!-- ✅ place 전용: 탭 + breadcrumb 한 줄 -->
+          <div class="place-head">
+            <div class="tab-box">
+              <!-- 상위 탭 -->
+              <div class="tab" role="tablist" aria-label="게시물 탭">
+                <button
+                  type="button"
+                  data-tab="introduce"
+                  class="tab-btn active"
+                >
+                  소개
+                </button>
+                <button type="button" data-tab="program" class="tab-btn">
+                  프로그램 안내
+                </button>
+                <button type="button" data-tab="commu" class="tab-btn">
+                  커뮤니티
+                </button>
+              </div>
+            </div>
+
+            <!-- Breadcrumb -->
+            <nav
+              class="breadcrumb breadcrumb--space"
+              aria-label="현재 페이지 위치"
+            >
+              <div class="breadcrumb-links">
+                <a class="breadcrumb-link" href="index.html">홈</a>
+                <a class="breadcrumb-link" href="#">공간안내</a>
+                <a class="breadcrumb-link" href="#">성북구민회관</a>
+                <a class="breadcrumb-link" href="#">소개</a>
+              </div>
+            </nav>
+          </div>
+
+          <!-- ✅ 상위탭 패널: 소개 -->
+          <div
+            class="content-panel active content-panel--space"
+            data-panel="introduce"
+            aria-label="소개탭 하위 페이지"
+          >
+            <div class="tab-group">
+              <div
+                class="sub-tab-list"
+                role="tablist"
+                aria-label="소개 하위 탭"
+              >
+                <button
+                  type="button"
+                  data-tab="intro-01"
+                  class="sub-tab-btn active"
+                  id="intro-01"
+                >
+                  성북구민회관 소개
+                </button>
+                <button
+                  type="button"
+                  data-tab="intro-02"
+                  class="sub-tab-btn"
+                  id="intro-02"
+                >
+                  시설 안내
+                </button>
+                <button
+                  type="button"
+                  data-tab="intro-03"
+                  class="sub-tab-btn"
+                  id="intro-03"
+                >
+                  찾아오시는 길
+                </button>
+              </div>
+
+              <section class="sub-panels" aria-labelledby="intro-panels-title">
+                <h2 class="blind" id="intro-panels-title">소개 하위 컨텐츠</h2>
+
+                <!-- intro-01 -->
+                <div class="sub-panel active" data-panel="intro-01">
+                  <article class="sub-panel-article">
+                    <!-- imgPanel + shareBtn -->
+                    <div class="media-panel-box">
+                      <div class="media-panel">
+                        <img
+                          class="zoom-image-main"
+                          src="assets/img/more2.jpg"
+                          alt="성북구민회관 이미지"
+                        />
+                        <!-- Image Modal Component -->
+                        <div
+                          class="image-modal"
+                          id="imgModal"
+                          aria-hidden="true"
+                        >
+                          <button
+                            class="image-modal-close"
+                            type="button"
+                            aria-label="닫기"
+                          >
+                            &times;
+                          </button>
+                          <div class="image-modal-scroll">
+                            <img
+                              id="imgModalContent"
+                              class="image-modal-image"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Share Panel Component -->
+                      <div class="share-panel">
+                        <div class="share-bar">
+                          <div class="share-bar-button">
+                            <img
+                              class="share-bar-icon"
+                              src="assets/img/share.png"
+                              alt="공유하기 버튼"
+                            />
+                          </div>
+                          <ul class="share-bar-list">
+                            <li class="share-bar-item">
+                              <img
+                                class="share-bar-icon"
+                                src="assets/img/blog-share.png"
+                                alt="블로그 공유하기"
+                              />
+                            </li>
+                            <li class="share-bar-item">
+                              <i
+                                class="fi fi-brands-instagram"
+                                aria-label="인스타그램으로 공유하기"
+                              ></i>
+                            </li>
+                            <li class="share-bar-item">
+                              <i
+                                class="fi fi-brands-facebook"
+                                aria-label="페이스북으로 공유하기"
+                              ></i>
+                            </li>
+                            <li class="share-bar-item">
+                              <i
+                                class="fi fi-brands-twitter"
+                                aria-label="트위터로 공유하기"
+                              ></i>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- content 01 -->
+                    <section
+                      class="post-content post-body"
+                      aria-labelledby="place-title"
+                    >
+                      <h2 class="post-title" id="place-title">성북구민회관</h2>
+                      <p class="sec-title">
+                        <span class="txt-bg-point">
+                          "지역 주민과 함께하는 생활밀착형 문화예술 컨텐츠 제공"
+                        </span>
+                      </p>
+                      <p class="txt justify">
+                        <strong class="strong">성북구민회관</strong>은 758석
+                        규모의 대강당을 갖추고 있어 음악, 연극, 무용 등 다양한
+                        공연과 발표회, 설명회, 강연회 등의 대관이 가능합니다.
+                        이로 인해 지역 주민들에게 다양한 행사와 문화예술의
+                        쉼터를 제공하며, 지역의 중요한 문화공간으로 자리매김하고
+                        있습니다.
+                      </p>
+                      <table class="info-table">
+                        <tbody class="info-table-body">
+                          <tr class="info-row info-row--contact">
+                            <th scope="row" class="info-label">문의</th>
+                            <td class="info-value">
+                              <a href="tel:02-929-0883">02-929-0883</a>
+                              <span class="info-value--space">
+                                (프로그램 문의 : 안내데스크 1번)
+                              </span>
+                            </td>
+                          </tr>
+
+                          <tr class="info-row info-row--location">
+                            <th scope="row" class="info-label">장소</th>
+                            <td class="info-value">
+                              서울시 성북구 성북로4길 177
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </section>
+                  </article>
+                </div>
+
+                <!-- intro-02 -->
+                <section
+                  class="sub-panel sub-panel--intro-02"
+                  data-panel="intro-02"
+                  aria-labelledby="intro-02-title"
+                >
+                  <h2 class="blind" id="intro-02-title">시설 안내 목록</h2>
+
+                  <article class="sub-panel-article sub-panel-article--intro02">
+                    <div class="media-panel-box he">
+                      <div class="media-panel">
+                        <img
+                          class="zoom-image"
+                          src="assets/img/place_3_1.jpg"
+                          alt="놀이교실 사진"
+                        />
+                      </div>
+                    </div>
+                    <section
+                      class="post-content post-content--intro-02 post-body"
+                    >
+                      <h4 class="sec-sub">놀이교실 (76㎡)</h4>
+                      <p class="txt justify">
+                        <strong class="strong">놀이교실</strong>은 드럼 수업을
+                        위한 최적의 환경을 제공합니다. 드럼을 처음 접하는
+                        초보자부터 다양한 리듬을 익히고 싶은 고급자까지 모두
+                        환영합니다. 방음 시설과 최신 전자 드럼 세트를 갖추고
+                        있으며, 전문 강사진이 개인 맞춤형 지도를 제공합니다.
+                      </p>
+                    </section>
+                  </article>
+
+                  <article class="sub-panel-article sub-panel-article--intro02">
+                    <div class="media-panel-box he">
+                      <div class="media-panel">
+                        <img
+                          class="zoom-image"
+                          src="assets/img/place_3_2.jpg"
+                          alt="유아교실 사진"
+                        />
+                      </div>
+                    </div>
+                    <section
+                      class="post-content post-content--intro-02 post-body"
+                    >
+                      <h4 class="sec-sub">유아교실 (85.3㎡)</h4>
+                      <p class="txt justify">
+                        <strong class="strong">유아교실</strong>은 아이들이
+                        즐겁게 학습하고 창의력을 키울 수 있는 공간입니다. 학습
+                        프로그램을 통해 기초 학습 능력을 향상시키고, 레고
+                        활동으로 창의력과 문제 해결 능력을 배양합니다. 또한,
+                        유아발레 수업을 통해 아이들의 신체 발달과 예술적 감각을
+                        함께 키워줍니다.
+                      </p>
+                    </section>
+                  </article>
+
+                  <article class="sub-panel-article sub-panel-article--intro02">
+                    <div class="media-panel-box he">
+                      <div class="media-panel">
+                        <img
+                          class="zoom-image"
+                          src="assets/img/place_3_3.jpg"
+                          alt="스포츠 교실 사진"
+                        />
+                      </div>
+                    </div>
+                    <section
+                      class="post-content post-content--intro-02 post-body"
+                    >
+                      <h4 class="sec-sub">스포츠 교실 (179.9㎡)</h4>
+                      <p class="txt justify">
+                        <strong class="strong">스포츠 교실</strong>은 다양한
+                        댄스와 발레 수업을 통해 신체 단련과 즐거움을 동시에 누릴
+                        수 있는 공간입니다. K-POP댄스와 줌바댄스 수업으로
+                        활기차고 에너지 넘치는 시간을 보낼 수 있으며, 초등
+                        발레와 성인 발레 수업을 통해 유연성과 균형감을 키울 수
+                        있습니다. 모든 연령대와 수준에 맞춘 프로그램으로 누구나
+                        참여할 수 있습니다.
+                      </p>
+                    </section>
+                  </article>
+
+                  <article class="sub-panel-article sub-panel-article--intro02">
+                    <div class="media-panel-box he">
+                      <div class="media-panel">
+                        <img
+                          class="zoom-image"
+                          src="assets/img/place_3_4.jpg"
+                          alt="피아노교실 사진"
+                        />
+                      </div>
+                    </div>
+                    <section
+                      class="post-content post-content--intro-02 post-body"
+                    >
+                      <h4 class="sec-sub">피아노교실 (51.9㎡)</h4>
+                      <p class="txt justify">
+                        <strong class="strong">피아노교실</strong>은 5개의 개별
+                        연습실로 구성되어 있어 학습자들이 편안하게 강습할 수
+                        있습니다. 각 방에는 방음 시설이 잘 갖춰져 있어 집중력
+                        있는 연습 환경을 제공합니다. 경험 많은 강사진이 개인
+                        맞춤형 수업을 통해 음악적 성장을 도와드립니다.
+                      </p>
+                    </section>
+                  </article>
+
+                  <article class="sub-panel-article sub-panel-article--intro02">
+                    <div class="media-panel-box he">
+                      <div class="media-panel">
+                        <img
+                          class="zoom-image"
+                          src="assets/img/place_3_5.jpg"
+                          alt="창작교실 사진"
+                        />
+                      </div>
+                    </div>
+                    <section
+                      class="post-content post-content--intro-02 post-body"
+                    >
+                      <h4 class="sec-sub">창작교실 (56.2㎡)</h4>
+                      <p class="txt justify">
+                        <strong class="strong">창작교실</strong>은 영어회화,
+                        하모니카, 토탈공예 수업을 통해 다양한 창의적 활동을 할
+                        수 있는 다목적 공간으로 쾌적한 환경에서 다채로운 배움의
+                        즐거움을 경험할 수 있습니다.
+                      </p>
+                    </section>
+                  </article>
+
+                  <article class="sub-panel-article sub-panel-article--intro02">
+                    <div class="media-panel-box he">
+                      <div class="media-panel">
+                        <img
+                          class="zoom-image"
+                          src="assets/img/place_3_6.jpg"
+                          alt="교양교실 사진"
+                        />
+                      </div>
+                    </div>
+                    <section
+                      class="post-content post-content--intro-02 post-body"
+                    >
+                      <h4 class="sec-sub">교양교실 (70.4㎡)</h4>
+                      <p class="txt justify">
+                        <strong class="strong">교양교실</strong>은 미술, 회화,
+                        공예 수업을 통해 예술적 감각을 키울 수 있는 공간입니다.
+                        다양한 미술 기법을 배우고, 회화와 공예 활동을 통해
+                        창의력을 발휘할 수 있습니다. 전문 강사진의 지도로
+                        자신만의 예술 작품을 만들 수 있습니다.
+                      </p>
+                    </section>
+                  </article>
+
+                  <article class="sub-panel-article sub-panel-article--intro02">
+                    <div class="media-panel-box he">
+                      <div class="media-panel">
+                        <img
+                          class="zoom-image"
+                          src="assets/img/place_3_7.jpg"
+                          alt="요리교실 사진"
+                        />
+                      </div>
+                    </div>
+                    <section
+                      class="post-content post-content--intro-02 post-body"
+                    >
+                      <h4 class="sec-sub">요리교실 (90.2㎡)</h4>
+                      <p class="txt justify">
+                        <strong class="strong">요리교실</strong>은 제과제빵
+                        자격증 수업과 한식조리사 자격증 수업 및 다양한 일상의
+                        취미 요리 프로그램 제공합니다. 리모델링된 주방 시설과
+                        도구를 갖추고 있어 실제 시험 환경과 유사한 조건에서
+                        연습할 수 있습니다. 경험 많은 강사진이 자격증 취득을
+                        위한 꼼꼼한 지도를 제공하여, 실력을 쌓아 자격증을 취득할
+                        수 있도록 도와드립니다.
+                      </p>
+                    </section>
+                  </article>
+
+                  <article class="sub-panel-article sub-panel-article--intro02">
+                    <div class="media-panel-box he">
+                      <div class="media-panel">
+                        <img
+                          class="zoom-image"
+                          src="assets/img/place_3_8.jpg"
+                          alt="미술교실 사진"
+                        />
+                      </div>
+                    </div>
+                    <section
+                      class="post-content post-content--intro-02 post-body"
+                    >
+                      <h4 class="sec-sub">미술교실 (90.9㎡)</h4>
+                      <p class="txt justify">
+                        <strong class="strong">미술교실</strong>은 전통민화,
+                        수채화/유화, 캘리그라피 등 다양한 미술 수업을
+                        제공합니다. 전통과 현대를 아우르는 다양한 미술 기법을
+                        배우며, 자신만의 스타일을 찾아갈 수 있는 기회를
+                        제공합니다. 편안하고 창의적인 환경에서 예술적 재능을
+                        발휘할 수 있습니다.
+                      </p>
+                    </section>
+                  </article>
+
+                  <article class="sub-panel-article sub-panel-article--intro02">
+                    <div class="media-panel-box he">
+                      <div class="media-panel">
+                        <img
+                          class="zoom-image"
+                          src="assets/img/place_3_9.jpg"
+                          alt="음악교실 사진"
+                        />
+                      </div>
+                    </div>
+                    <section
+                      class="post-content post-content--intro-02 post-body"
+                    >
+                      <h4 class="sec-sub">음악교실 (87.6㎡)</h4>
+                      <p class="txt justify">
+                        <strong class="strong">음악교실</strong>은 문해교육,
+                        바이올린, 클래식 기타, 꿈의 오케스트라 악기 파트 수업
+                        등의 여러강좌가 진행되며, 배움에 대한 꿈과 열정을
+                        발휘하는 공간입니다.
+                      </p>
+                    </section>
+                  </article>
+
+                  <article class="sub-panel-article sub-panel-article--intro02">
+                    <div class="media-panel-box he">
+                      <div class="media-panel">
+                        <img
+                          class="zoom-image"
+                          src="assets/img/place_3_10.jpg"
+                          alt="다목적실 사진"
+                        />
+                      </div>
+                    </div>
+                    <section
+                      class="post-content post-content--intro-02 post-body"
+                    >
+                      <h4 class="sec-sub">
+                        다목적실1,2,3 (35.28㎡) (43.20㎡) (92.34㎡)
+                      </h4>
+                      <p class="txt justify">
+                        <strong class="strong">다목적실</strong>은 정규수업과
+                        대규모 특강 등의 행사가 진행되는 공간입니다. 통기타,
+                        글쓰기 수업을 하며, 꿈의 오케스트라의 합주 연주가
+                        이루어지기도 합니다. 리모델링된 쾌적한 공간에서 다양한
+                        수업을 들으며 문화예술교육에 참여하실 수 있습니다.
+                      </p>
+                    </section>
+                  </article>
+                </section>
+
+                <!-- intro-03 -->
+                <div class="sub-panel" data-panel="intro-03">
+                  <section class="map-sec" aria-label="찾아오시는 길 지도">
+                    <div id="map" style="width: 100%; height: 400px"></div>
+
+                    <script
+                      type="text/javascript"
+                      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8eee94d82493b64d9445e2539b3f2fe9&autoload=false"
+                    ></script>
+
+                    <script>
+                      let map;
+
+                      kakao.maps.load(() => {
+                        map = new kakao.maps.Map(
+                          document.getElementById("map"),
+                          {
+                            center: new kakao.maps.LatLng(
+                              37.593873,
+                              127.016489,
+                            ),
+                            level: 3,
+                          },
+                        );
+                      });
+
+                      document.addEventListener("click", (e) => {
+                        if (
+                          !e.target.closest('.sub-tab-btn[data-tab="intro-03"]')
+                        )
+                          return;
+                        setTimeout(() => map && map.relayout(), 50);
+                      });
+                    </script>
+                  </section>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <!-- ✅ 상위탭 패널: 프로그램 안내 -->
+          <div
+            class="content-panel"
+            data-panel="program"
+            aria-label="프로그램 안내 하위 페이지"
+          ></div>
+
+          <!-- ✅ 상위탭 패널: 커뮤니티 -->
+          <div
+            class="content-panel"
+            data-panel="commu"
+            aria-label="커뮤니티 컨텐츠 하위 페이지"
+          >
+            커뮤니티 컨텐츠
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div data-include="fix-menu"></div>
+    <div data-include="footer"></div>
+
+    <script src="assets/js/include.js" defer></script>
+    <script src="assets/js/components.js" defer></script>
+    <script src="assets/js/tab.js" defer></script>
+  </body>
+</html>

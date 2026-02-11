@@ -1,0 +1,292 @@
+.login-page {
+  /* ✅ 페이지 기본 폰트는 네 root의 --font1 사용 */
+  body {
+    font-family: var(--font1);
+    color: var(--color-4);
+  }
+
+  /* 전체 래퍼 */
+  .login-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 200px 20px 90px;
+    @include mobile {
+      padding: 100px 20px 50px;
+    }
+  }
+
+  /* 상단 타이틀 영역 */
+  .login-head {
+    text-align: center;
+    margin-bottom: 45px;
+    @include mobile {
+      margin-bottom: 10px;
+    }
+  }
+
+  .login-title {
+    font-family: var(--font1);
+    font-size: var(--fs-title-1);
+    line-height: var(--lh-title-1);
+    font-weight: 700;
+    margin: 0 0 14px;
+    letter-spacing: -0.02em;
+  }
+
+  .login-desc {
+    margin: 0 auto;
+    max-width: 820px;
+    font-size: var(--fs-body-2);
+    line-height: var(--lh-body-2);
+    color: var(--color-4-80);
+  }
+
+  /* 2컬럼 패널 */
+  .login-panel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: start;
+    padding: 20px 0 20px;
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  .login-divider {
+    width: 1px;
+    height: 450px;
+    background: var(--color-4-30);
+    justify-self: center;
+  }
+
+  /* 좌측 폼 */
+  .login-left {
+    padding: 40px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    background: var(--color-4-5);
+    border-radius: 20px;
+    border: 1px solid var(--color-4-10);
+    @include mobile {
+      padding: 20px;
+      height: 360px;
+    }
+  }
+  .login-form {
+    max-width: 520px;
+  }
+
+  .login-field {
+    position: relative;
+    display: block;
+    margin-bottom: 14px;
+  }
+
+  .login-field input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--color-4-30);
+    background: transparent;
+    padding: 0 16px 0 16px;
+    font-size: var(--fs-body-1);
+    line-height: var(--lh-body-1);
+    color: var(--color-4);
+    outline: none;
+  }
+
+  .login-field input::placeholder {
+    color: var(--color-4-70);
+  }
+
+  .login-field input:focus {
+    border-color: var(--color-2);
+  }
+
+  /* 체크 */
+  .login-check {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 6px 0 18px;
+    color: var(--color-4-80);
+    font-size: var(--fs-body-2);
+  }
+
+  .login-check input {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--color-4);
+  }
+
+  /* 로그인 버튼: 색상 과한 거 싫다 했으니 거의 흑백 */
+  .login-btn {
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--color-4);
+    background: var(--color-4);
+    color: #fff;
+    font-size: var(--fs-button-lg);
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+  }
+  @media (hover: hover) {
+    .login-btn:hover {
+      opacity: 0.92;
+    }
+  }
+  /* 안내 문구 */
+  .login-help {
+    margin: 16px 0 0;
+    font-size: var(--fs-caption);
+    line-height: var(--lh-caption);
+    color: var(--color-4-80);
+  }
+
+  /* 하단 링크 */
+  .login-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-top: 22px;
+    font-size: var(--fs-body-2);
+    color: var(--color-4-80);
+  }
+  @media (hover: hover) {
+    .login-links a:hover {
+      text-decoration: underline;
+    }
+  }
+  .login-links .sep {
+    opacity: 0.45;
+  }
+
+  .login-links .link-join {
+    color: var(--color-2); /* ✅ 포인트는 여기만 */
+    font-weight: 700;
+  }
+
+  /* 우측 소셜 */
+  .login-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    background: var(--color-4-5);
+    border-radius: 20px;
+    border: 1px solid var(--color-4-10);
+    @include mobile {
+      background: var(--color-4-5);
+      height: 300px;
+      border: none;
+      width: 100%;
+    }
+  }
+  .social-list {
+    width: 100%;
+    padding: 0px 40px 0 40px;
+    @include mobile {
+      padding: 0px var(--gap) 0 var(--gap);
+    }
+  }
+
+  .social-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: var(--gap);
+    padding: 0.9rem 2rem;
+    border: 1px solid var(--color-4-10);
+    border-radius: 10px;
+
+    @include mobile {
+      padding: 0.9rem 1rem;
+      height: 50px;
+    }
+  }
+  .social-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .social-badge-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mobile {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .social-txt {
+    font-size: var(--fs-body-1);
+    line-height: var(--lh-body-1);
+    color: var(--color-4);
+    white-space: nowrap;
+  }
+
+  /* 우측 하단 안내 */
+  .login-notice {
+    font-size: var(--fs-body-1);
+    line-height: 1.7;
+    color: var(--color-4-80);
+  }
+
+  .login-notice strong {
+    color: var(--color-4);
+    font-weight: 700;
+  }
+
+  /* 하단 배너 */
+  .join-banner {
+    text-align: center;
+    margin-top: 40px;
+    padding: 26px 26px;
+    border: 1px solid var(--color-4-20);
+    background: rgba(43, 42, 40, 0.03); /* ✅ 거의 무채색 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    @include mobile {
+      margin-top: 0px;
+    }
+  }
+
+  .join-copy h2 {
+    margin: 0 0 6px;
+    font-size: var(--fs-title-3);
+    line-height: var(--lh-title-3);
+    font-weight: 700;
+    @include mobile {
+      font-size: var(--fs-title-4);
+    }
+  }
+
+  .join-copy p {
+    margin: 0;
+    font-size: var(--fs-body-2);
+    line-height: var(--lh-body-2);
+    color: var(--color-4-80);
+  }
+  @media (hover: hover) {
+    .hover:hover {
+      border: 1px solid var(--color-2);
+      background: #ffffff;
+      box-shadow: 0 0 20px var(--color-4-10);
+      font-weight: 600;
+    }
+  }
+}

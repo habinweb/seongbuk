@@ -1,0 +1,225 @@
+.sub-page {
+  .none {
+    display: none;
+  }
+
+  /* ===== Post Base (공통 본문 컴포넌트) ===== */
+  .post-body {
+    width: 100%;
+    line-height: 1.6;
+    font-size: var(--fs-title-4);
+    color: var(--color-4);
+  }
+
+  /* 섹션 간격 */
+  .post-sec {
+    margin-top: 2rem;
+  }
+
+  /* 큰 제목 - base */
+  .post-title {
+    font-size: var(--fs-title-1);
+  }
+
+  .post-body .sec-title {
+    margin: 0 0 1rem;
+    font-size: var(--fs-title-2);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--color-4);
+  }
+
+  /* 소제목 (h4) - base */
+  .post-body .sec-sub {
+    margin: 1.4rem 0 0.6rem;
+    font-size: var(--fs-title-3);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--color-4);
+  }
+
+  /* 문단 */
+  .post-body .txt {
+    margin: 0.85rem 0;
+  }
+
+  /* 강조 텍스트 */
+  .post-body .strong {
+    font-weight: 800;
+    color: var(--color-4);
+  }
+
+  /* 보조설명 */
+  .post-body .note {
+    display: inline-block;
+    font-size: var(--fs-title-4);
+    color: var(--color-4-70);
+  }
+  .post-meta {
+    display: flex;
+    gap: var(--gap);
+  }
+
+  .post-meta-text {
+    font-weight: 700;
+  }
+
+  .post-meta-value {
+    margin-left: 5px;
+    font-weight: 500;
+  }
+
+  /* 리스트 */
+  .post-body .list {
+    margin: 0.75rem 0 1rem;
+  }
+
+  .post-body .list > li {
+    margin: 0.4rem 0;
+  }
+
+  /* 리스트 안 줄바꿈 여백 */
+  .post-body .list > li br {
+    content: "";
+    display: block;
+    margin-top: 0.2rem;
+  }
+
+  /* 구분선 - base(색은 스킨에서) */
+  .post-body .div {
+    border: 0;
+    height: 1px;
+    margin: 1.8rem 0;
+  }
+
+  /* 링크 컬러는 프로젝트 공통 */
+  .post-body a {
+    color: var(--color-3);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  /* ===== 반응형(base) ===== */
+  @media (max-width: 768px) {
+    .post-body {
+      font-size: 0.98rem;
+    }
+
+    .post-body .sec-title {
+      font-size: 1.25rem;
+    }
+
+    .post-body .sec-sub {
+      font-size: 1rem;
+    }
+
+    .post-body .div {
+      margin: 1.4rem 0;
+    }
+  }
+  /* ===== Board Skin ===== */
+  .post-body--board {
+    padding: 1.2rem;
+    border: 1px solid var(--color-4-20);
+    border-radius: 14px;
+  }
+
+  /* board에서만 쓰는 제목 하이라이트 */
+  .post-body--board .sec-title--board {
+    background: var(--color-4-20);
+    padding: 0.1rem 0.5rem;
+  }
+
+  /* board 소제목 배경/패딩 */
+  .post-body--board .sec-sub--board {
+    background: var(--color-4-50);
+    padding: 0.1rem 0.5rem;
+  }
+
+  /* board 문단 들여쓰기(선택 적용) */
+  .post-body--board .txt--board {
+    padding-left: 1rem;
+    @include tablet {
+      padding-left: 2px;
+    }
+  }
+
+  /* board 리스트 들여쓰기(선택 적용) */
+  .post-body--board .list--board {
+    padding-left: 1.2rem;
+
+    @include tablet {
+      padding-left: 2px;
+    }
+  }
+
+  /* 구분선 색은 board 스킨에서 */
+  .post-body--board .div {
+    background: var(--color-4-20);
+  }
+
+  .justify {
+    text-align: justify;
+  }
+  .border-box {
+    display: inline-block;
+    border: 1.5px solid var(--color-4);
+    padding: 10px;
+  }
+
+  /* table */
+  .info-table {
+    display: inline-block;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    @include tablet {
+      margin-bottom: 30px;
+    }
+    @include mobile {
+      margin-bottom: 0;
+    }
+  }
+  .info-table-body {
+    display: flex;
+    gap: 15px;
+    @include tablet {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  .info-row {
+    display: flex;
+  }
+  .info-label,
+  .info-value {
+    padding: 0 15px;
+    vertical-align: middle;
+    height: 30px;
+    font-size: var(--fs-body-1);
+  }
+
+  .info-label {
+    font-weight: 600;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    background: var(--color-4-20);
+    color: var(--color-4-80);
+  }
+  .info-value {
+    color: var(--color-4-80);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0 10px;
+    margin-top: 2px;
+    font-size: var(--fs-body-1);
+    @include tablet {
+      margin-top: 3px;
+    }
+  }
+  .info-value--space {
+    color: var(--color-4-70);
+    font-size: var(--fs-body-2);
+  }
+}
