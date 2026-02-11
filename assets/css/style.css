@@ -4,37 +4,37 @@
   font-family: "KoPubWorldBatang";
   font-weight: 300;
   font-style: normal;
-  src: url("/Seongbuk/fonts/KoPubWorld-Batang-Light.woff2") format("woff2"), url("/Seongbuk/fonts/KoPubWorld-Batang-Light.woff") format("woff");
+  src: url("../../fonts/KoPubWorld-Batang-Light.woff2") format("woff2"), url("../../fonts/KoPubWorld-Batang-Light.woff") format("woff");
 }
 @font-face {
   font-family: "KoPubWorldBatang";
   font-weight: 500;
   font-style: normal;
-  src: url("/Seongbuk/fonts/KoPubWorld-Batang-Medium.woff2") format("woff2"), url("/Seongbuk/fonts/KoPubWorld-Batang-Medium.woff") format("woff");
+  src: url("../../fonts/KoPubWorld-Batang-Medium.woff2") format("woff2"), url("../../fonts/KoPubWorld-Batang-Medium.woff") format("woff");
 }
 @font-face {
   font-family: "KoPubWorldBatang";
   font-weight: 700;
   font-style: normal;
-  src: url("/Seongbuk/fonts/KoPubWorld-Batang-Bold.woff2") format("woff2"), url("/Seongbuk/fonts/KoPubWorld-Batang-Bold.woff") format("woff");
+  src: url("../../fonts/KoPubWorld-Batang-Bold.woff2") format("woff2"), url("../../fonts/KoPubWorld-Batang-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "KoPubWorldDotum";
   font-weight: 300;
   font-style: normal;
-  src: url("/Seongbuk/fonts/KoPubWorld-Dotum-Light.woff2") format("woff2"), url("/Seongbuk/fonts/KoPubWorld-Dotum-Light.woff") format("woff");
+  src: url("../../fonts/KoPubWorld-Dotum-Light.woff2") format("woff2"), url("../../fonts/KoPubWorld-Dotum-Light.woff") format("woff");
 }
 @font-face {
   font-family: "KoPubWorldDotum";
   font-weight: 500;
   font-style: normal;
-  src: url("/Seongbuk/fonts/KoPubWorld-Dotum-Medium.woff2") format("woff2"), url("/Seongbuk/fonts/KoPubWorld-Dotum-Medium.woff") format("woff");
+  src: url("../../fonts/KoPubWorld-Dotum-Medium.woff2") format("woff2"), url("../../fonts/KoPubWorld-Dotum-Medium.woff") format("woff");
 }
 @font-face {
   font-family: "KoPubWorldDotum";
   font-weight: 700;
   font-style: normal;
-  src: url("/Seongbuk/fonts/KoPubWorld-Dotum-Bold.woff2") format("woff2"), url("/Seongbuk/fonts/KoPubWorld-Dotum-Bold.woff") format("woff");
+  src: url("../../fonts/KoPubWorld-Dotum-Bold.woff2") format("woff2"), url("../../fonts/KoPubWorld-Dotum-Bold.woff") format("woff");
 }
 /* ============================================================ */
 :root {
