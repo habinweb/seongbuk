@@ -236,11 +236,11 @@ button {
   }
 }
 
-.view {
+.fix-item.view {
   width: 110px;
 }
 @media (max-width: 768px) {
-  .view {
+  .fix-item.view {
     display: none;
   }
 }
@@ -255,7 +255,7 @@ button {
   white-space: nowrap;
   transition: all 0.5s ease;
   position: relative;
-  opacity: 0.5;
+  opacity: 0.8;
   margin-right: 10px;
 }
 
@@ -649,7 +649,7 @@ footer {
 
 .foot-logo > a > img {
   width: 100%;
-  opacity: 50%;
+  opacity: 0.8;
 }
 @media (max-width: 1024px) {
   .foot-logo > a > img {
@@ -733,7 +733,7 @@ footer {
     top: 55%;
     transform: translateY(-50%);
     left: 15px;
-    opacity: 0.5;
+    opacity: 0.8;
   }
 }
 
@@ -1072,6 +1072,7 @@ footer {
   width: 100%;
   color: var(--color-4);
   font-size: var(--fs-title-4);
+  font-weight: 700;
 }
 @media (max-width: 768px) {
   .main-page .banner-txt {

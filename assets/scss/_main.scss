@@ -159,6 +159,7 @@
     width: 100%;
     color: var(--color-4);
     font-size: var(--fs-title-4);
+    font-weight: 700;
     @include mobile {
       overflow: hidden;
       white-space: nowrap;
