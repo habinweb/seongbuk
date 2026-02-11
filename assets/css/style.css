@@ -2951,7 +2951,7 @@ footer {
 .sub-page .post-body .note {
   display: inline-block;
   font-size: var(--fs-title-4);
-  color: var(--color-4-90);
+  color: var(--color-4);
 }
 .sub-page .post-meta {
   display: flex;
