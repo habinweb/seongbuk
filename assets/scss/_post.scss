@@ -181,11 +181,8 @@
   }
   .info-table-body {
     display: flex;
+    flex-direction: column;
     gap: 15px;
-    @include tablet {
-      flex-direction: column;
-      gap: 15px;
-    }
   }
   .info-row {
     display: flex;
@@ -207,19 +204,20 @@
     color: var(--color-4-80);
   }
   .info-value {
-    color: var(--color-4-80);
+    color: var(--color-4);
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: start;
     padding: 0 10px;
     margin-top: 2px;
+    gap: 10px;
     font-size: var(--fs-body-1);
     @include tablet {
       margin-top: 3px;
     }
   }
   .info-value--space {
-    color: var(--color-4-90);
+    color: var(--color-4);
     font-size: var(--fs-body-2);
   }
 }

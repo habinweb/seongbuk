@@ -86,7 +86,7 @@
   .page--place .sub-tab-btn {
     text-align: start;
     font-size: var(--fs-title-4);
-    color: var(--color-4-50);
+    color: var(--color-4);
     font-weight: 700;
     margin-bottom: 5px;
     margin-right: var(--gap);
@@ -100,7 +100,7 @@
     }
   }
   .page--place .sub-tab-btn.active {
-    color: var(--color-4);
+    color: var(--color-2);
   }
   .share-bar {
     border-bottom: none;
@@ -223,5 +223,10 @@
     position: relative;
     z-index: 1;
     overflow: visible;
+  }
+  .info-value > a {
+    font-weight: 700;
+    color: var(--color-2);
+    display: inline-block;
   }
 }
