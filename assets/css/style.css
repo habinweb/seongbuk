@@ -2869,7 +2869,7 @@ footer {
 .sub-page .attachments-file {
   cursor: pointer;
   text-decoration: underline;
-  color: var(--color-4-90);
+  color: var(--color-4);
 }
 @media (hover: hover) {
   .sub-page .attachments-file:hover {
@@ -2951,7 +2951,7 @@ footer {
 .sub-page .post-body .note {
   display: inline-block;
   font-size: var(--fs-title-4);
-  color: var(--color-4-70);
+  color: var(--color-4-90);
 }
 .sub-page .post-meta {
   display: flex;
@@ -3133,7 +3133,7 @@ footer {
   }
 }
 .sub-page .info-value--space {
-  color: var(--color-4-70);
+  color: var(--color-4-90);
   font-size: var(--fs-body-2);
 }
 
