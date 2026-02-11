@@ -1,5 +1,3 @@
-console.log("INCLUDE JS OK");
-
 (async () => {
   const nodes = document.querySelectorAll("[data-include]");
   if (!nodes.length) return;
